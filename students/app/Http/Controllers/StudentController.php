@@ -45,7 +45,7 @@ class StudentController extends Controller
             'last-name'    => $request->get('last-name')
         ]);
         $student->save();
-        return redirect()->route('student.create')->with('success', 'Data Added');
+        return redirect()->route('student.index')->with('success', 'Data Added');
     }
 
     /**
